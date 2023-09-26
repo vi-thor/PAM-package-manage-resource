@@ -61,18 +61,6 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
   color: var(--color-white);
   font-family: var(--font-primary);
 }
-a {
-  color: var(--primary-color) !important;
-  text-decoration: none !important;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-a:active {
-  color: #589dad7b !important;
-}
 
 .main-content {
   margin-top: 2em;
@@ -94,12 +82,20 @@ a:active {
 .login-form {
   border-radius: 1.5em;
   width: 95%;
-  height: 15em;
+  height: 19em;
   background-color: var(--primary-color) !important;
 }
 
-.eye-login {
-  
+a {
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
+a:active {
+  color: #589dad7b !important;
+}
 /*end login*/
