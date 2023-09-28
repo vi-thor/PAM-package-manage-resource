@@ -103,3 +103,90 @@ a:active {
 }
 
 /*end login*/
+
+/* Inicio Encomenda*/
+
+.encomenda-title {
+  font-family: var(--font-subtitle);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16pt;
+  margin-top: 2em;
+}
+
+/* Estilo para a tabela ou lista de artigos da encomenda */
+.encomenda-artigos {
+  width: 100%;
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+
+.encomenda-artigos th, .encomenda-artigos td {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+.encomenda-artigos th {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+/* Estilo para o botão de adicionar artigo */
+.encomenda-adicionar-artigo {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.encomenda-adicionar-artigo:hover {
+  background-color: #457999; /* Cor mais escura quando hover */
+}
+
+/* Estilo para o formulário de adição de artigo */
+.encomenda-form-artigo {
+  margin-top: 1em;
+}
+
+.encomenda-form-artigo label {
+  font-family: var(--font-primary);
+}
+
+.encomenda-form-artigo input[type="text"] {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+  margin-top: 0.5em;
+}
+
+.bordered-button {
+  border: 1px solid var(--color-white) !important;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.individual-order {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Fim Encomenda*/
