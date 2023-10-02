@@ -10,13 +10,6 @@ if (localStorage.getItem("articles") === null){
     localStorage.setItem("articles", JSON.stringify(arr));
 }
 
-// var articles = localStorage.getItem("articles");
-// console.log(articles);
-
-// function insert(article) {
-//     console.log(newid);
-// }
-
 // evento para permitir apenas a inserção de número no input "qtd"
 const inputQtd = document.getElementById('qtd');
 
@@ -26,7 +19,7 @@ inputQtd.addEventListener('input', function() {
     const inputValueQtd = inputQtd.value;
 
     // carcteres validos
-    const validCharacters = /^[0-9,]*$/;
+    const validCharacters = /^[0-9]*$/;
 
     if (!validCharacters.test(inputValueQtd)) {
         inputQtd.value = inputValueQtd.replace(/[^0-9]/g, '');
@@ -47,4 +40,29 @@ inputPrice.addEventListener('input', function() {
     if (!validCharacters.test(inputValuePrice)) {
         inputPrice.value = inputValuePrice.replace(/[^0-9.]/g, '');
     }
+});
+
+function insert(name, brand, qtd, price, expire_date) {
+    const article = {
+        name: name,
+        brand: brand,
+        qtd: qtd,
+        price: price,
+        expire_date: expire_date
+    };
+
+    let articles = JSON.parse(localStorage.getItem('articles')); //|| [];
+    articles.push(article);
+    localStorage.setItem('articles', JSON.stringify(articles));
+}
+
+document.getElementById('form-artigo').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const brand = document.getElementById('brand').value;
+    const qtd = document.getElementById('qtd').value;
+    const price = document.getElementById('price').value;
+    const expire_date = document.getElementById('expire-date').value;
+    insert(name, brand, qtd, price, expire_date);
+    this.reset();
 });
