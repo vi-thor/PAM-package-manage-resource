@@ -77,6 +77,15 @@
     align-items: center;
     justify-content: center;
   }
+
+
+  .logout-icon{
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 1em;
+    color: var(--color-white);
+  }
   /* Fim Encomenda*/
   
   
