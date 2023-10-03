@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="encomenda.css">
     <title>Lista de Encomendas</title>
 </head>
 <body>
@@ -15,11 +16,20 @@
           <a href="./index.html"><img class="logout-icon" src="./assets/right-from-bracket-solid.svg" alt="logout" ></a>
         </h1>
       </header>
-      <main class="container-fluid">
-        <a href="encomenda.html" class="d-flex justify-content-end mt-3"> + Adicionar Encomenda</a>
+      <main class="container-fluid mb-3">
+        <a href="encomenda.html" class="d-flex justify-content-end mt-3 text-secondary"> + Adicionar Encomenda</a>
         <h3 class="mt-2">Últimas Encomendas</h3>
         <div id="orderList" class="m-1"></div>
       </main>
+      <footer class="py-4 mt-4">
+        <div class="row d-flex align-items-center text-center text-white">
+          <div class="row">
+            <div class="col"><a href="./lista.html">Encomendas</a></div>
+            <div class="col"><a href="">Perfil</a></div>
+            <div class="col"><a href="./artigo.html">Produtos</a></div>
+        </div>
+        </div>
+      </footer>
     <script src="main.js"></script>
 
     <script>
@@ -32,7 +42,7 @@
 
             orders.forEach(order => {
                 let orderDiv = document.createElement("div");
-                orderDiv.classList.add("individual-order", "mb-3", "border", "p-3"); // Added Bootstrap classes for margin, border, and padding
+                orderDiv.classList.add("individual-order", "mb-3", "border", "m-3"); // Added Bootstrap classes for margin, border, and padding
 
                 orderDiv.innerHTML = `
                     <p><strong>Nome:</strong> ${order.nome}</p>
