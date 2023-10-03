@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="encomenda.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulário de Encomenda</title>
+</head>
+<body>
+    <header class="justify-content-center align-content-center pt-3">
+        <h1 class="text-center">Formulário de Encomenda</h1>
+    </header>
+    <main class="main-content container-fluid mt-4 d-flex flex-column justify-content-between">
+
+        <form id="encomenda-form" class="col-12">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="valor-total" class="form-label">Valor Total:</label>
+                <input type="text" id="valor-total" name="valor-total" class="form-control" readonly>
+            </div>            
+
+            <div class="mb-3">
+                <label for="data-encomenda" class="form-label">Data da Encomenda:</label>
+                <input type="date" id="data-encomenda" name="data-encomenda" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="produto-selecionado" class="form-label">Selecione um Produto:</label>
+                <select id="produto-selecionado" name="produto-selecionado" class="form-select">
+                    <option value="" disabled selected>Selecione um produto</option>
+                </select>
+            </div>
+
+            <ul id="lista-produtos" class="mt-4 d-flex justify-content-center align-items-center">
+                <!-- Lista de produtos selecionados será exibida aqui -->
+            </ul>
+        </form>
+        <section class="d-flex flex-column align-items-center mt-3">
+         <button type="button" id="adicionar-produto" class="btn btn-primary mb-4">Adicionar Produto</button>
+         <button type="submit" class="btn btn-primary">Enviar Encomenda</button>
+        </section>
+    </main>
+    <footer class="py-4">
+        <div class="row d-flex align-items-center text-center text-white">
+            <div class="col-4">encomendas</div>
+            <div class="col-4">perfil</div>
+            <div class="col-4">produtos</div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

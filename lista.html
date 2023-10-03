@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Encomendas</title>
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1 class="mb-4">Lista de Encomendas</h1>
+        <button class="btn btn-primary mb-3" onclick="displayOrders()">Mostrar Encomendas</button>
+        <div id="orderList"></div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        function displayOrders() {
+    const orders = JSON.parse(localStorage.getItem("orders")) || [];
+    const orderListDiv = document.getElementById("orderList");
+    orderListDiv.innerHTML = ""; // Clear previous list
+
+    orders.forEach(order => {
+        let orderDiv = document.createElement("div");
+        orderDiv.classList.add("individual-order", "mb-3", "border", "p-3"); // Added Bootstrap classes for margin, border, and padding
+
+        orderDiv.innerHTML = `
+            <p><strong>Nome:</strong> ${order.nome}</p>
+            <p><strong>Valor Total:</strong> ${order.valorTotal}</p>
+            <p><strong>Data:</strong> ${order.data}</p>
+            <p><strong>Produtos:</strong> ${order.produtos}</p>
+        `;
+
+        orderListDiv.appendChild(orderDiv);
+    });
+}
+    </script>
+   
+</body>
+</html>

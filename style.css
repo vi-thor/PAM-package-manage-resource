@@ -1,39 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&display=swap");
-
-/*Roboto imports*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url();
-
-@font-face {
-  font-family: "Roboto-bold";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-}
-
-:root {
-  --font-primary: "Montserrat", sans-serif;
-  --font-subtitle: "Roboto-bold", sans-serif;
-  --primary-color: #589ead;
-  --color-white: #f9f9f9;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('./variables.css');
 
 /**OVERRIDES*/
 
-.btn-primary {
-  background-color: var(--primary-color) !important;
-  border-color: var(--primary-color) !important;
-  width: 80%;
-  border-radius: 20px !important;
-}
 
-body {
-  background: var(--color-white);
-}
 
 h1 {
   font-family: var(--font-primary);
@@ -103,3 +72,47 @@ a:active {
 }
 
 /*end login*/
+
+/* Inicio Encomenda*/
+
+.encomenda-title {
+  font-family: var(--font-subtitle);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16pt;
+  margin-top: 2em;
+}
+
+/* Estilo para a tabela ou lista de artigos da encomenda */
+.encomenda-artigos {
+  width: 100%;
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+
+.encomenda-artigos th, .encomenda-artigos td {
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+.encomenda-artigos th {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
+/* Estilo para o botão de adicionar artigo */
+.encomenda-adicionar-artigo {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.encomenda-adicionar-artigo:hover {
+  background-color: #457999; /* Cor mais escura quando hover */
+}
+
