@@ -1,6 +1,10 @@
 @import url('./variables.css');
 
 /* Estilo para o formulário de adição de artigo */
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
 .encomenda-form-artigo {
     margin-top: 1em;
   }
@@ -76,15 +80,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
-
-
-  .logout-icon{
-    width: 20px;
-    height: auto;
-    position: absolute;
-    right: 1em;
-    color: var(--color-white);
   }
   /* Fim Encomenda*/
   

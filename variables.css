@@ -24,12 +24,33 @@
 }
 
 .btn-primary {
-    background-color: var(--primary-color) !important;
-    border-color: var(--primary-color) !important;
-    width: 80%;
-    border-radius: 20px !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  width: 80%;
+  border-radius: 20px !important;
+}
+
+.btn-outline-primary {
+  background-color: var(--color-white) !important;
+  border-color: var(--color-white) !important;
+  width: 80%;
+  border-radius: 20px !important;
 }
 
 body {
     background: var(--color-white);
+}
+
+a {
+  color: var(--color-white) !important;
+  text-decoration: none !important;
+}
+
+.logout-icon{
+  width: 20px;
+  height: auto;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: var(--color-white);
 }

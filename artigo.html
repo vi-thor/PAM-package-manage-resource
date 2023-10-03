@@ -10,8 +10,10 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="p-1"><h1 class="text-center">Artigo</h1></div>
+        <div class="container justify-content-between align-content-center pt-3">
+           <h1 class="text-center">Formulário de Produtos</h1>
+            <a href="./index.html"><img class="logout-icon" src="./assets/right-from-bracket-solid.svg" alt="logout" ></a>
+
         </div>
     </header>
 
@@ -19,10 +21,6 @@
 
     <main class="main-content container-fluid">
         <form id="form-artigo">
-
-            <div class="mb-4 text-center">
-                <h1>Imagem Aqui</h1>
-            </div>
 
             <div class="mb-3">
                 <label for="name" class="form-label">Nome:</label>
@@ -50,16 +48,16 @@
                 <input type="date" id="expire-date" name="expire-date" class="form-control" >
             </div>
 
-            <div class="text-center">
-                <button type="submit" id="btnSave" name="btnSave" class="btn btn-secondary w-100">Guardar</button>
+            <div class=" d-flex btn-bottom justify-content-center align-items-center">
+                <button type="submit" id="btnSave" name="btnSave" class="btn btn-primary">Guardar</button>
             </div>
         </form>
     </main>
     <footer class="py-4">
         <div class="row">
-            <div class="col">encomendas</div>
-            <div class="col">perfil</div>
-            <div class="col">produtos</div>
+            <div class="col"><a href="./encomenda.html">Encomendas</a></div>
+            <div class="col"><a href="">Perfil</a></div>
+            <div class="col"><a href="./artigo.html">Produtos</a></div>
         </div>
     </footer>
     <script src="_artigo.js"></script>
