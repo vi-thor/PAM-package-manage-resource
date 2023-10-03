@@ -1,0 +1,82 @@
+@import url('./variables.css');
+
+/* Estilo para o formulário de adição de artigo */
+.encomenda-form-artigo {
+    margin-top: 1em;
+  }
+  
+  .encomenda-form-artigo label {
+    font-family: var(--font-primary);
+  }
+  
+  .encomenda-form-artigo > .mb-3 > input[type="text"] {
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    margin-top: 0.5em;
+    background-color: none;
+  }
+  .encomenda-form-artigo > .mb-3 > input[type="text"]:focus {
+    background-color: none;
+  }
+  
+  .bordered-button {
+    border: 1px solid var(--color-white) !important;
+  }
+  
+  .btn-bottom {
+    bottom: 2em;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .individual-order {
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  header {
+    height: 59px;
+    background-color: var(--primary-color);
+  }
+  
+  header h1 {
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: larger;
+  }
+  
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    background-color: var(--primary-color);
+  }
+
+  li {
+    list-style-type: none;
+    height: 40px;
+    width: 80%;
+    background-color: rgba(88,158,173, 0.5);
+    border-radius: 10px;
+    color: var(--color-white);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Fim Encomenda*/
+  
+  

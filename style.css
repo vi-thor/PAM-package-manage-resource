@@ -1,39 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&display=swap");
-
-/*Roboto imports*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url();
-
-@font-face {
-  font-family: "Roboto-bold";
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-}
-
-:root {
-  --font-primary: "Montserrat", sans-serif;
-  --font-subtitle: "Roboto-bold", sans-serif;
-  --primary-color: #589ead;
-  --color-white: #f9f9f9;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('./variables.css');
 
 /**OVERRIDES*/
 
-.btn-primary {
-  background-color: var(--primary-color) !important;
-  border-color: var(--primary-color) !important;
-  width: 80%;
-  border-radius: 20px !important;
-}
 
-body {
-  background: var(--color-white);
-}
 
 h1 {
   font-family: var(--font-primary);
@@ -147,46 +116,3 @@ a:active {
   background-color: #457999; /* Cor mais escura quando hover */
 }
 
-/* Estilo para o formulário de adição de artigo */
-.encomenda-form-artigo {
-  margin-top: 1em;
-}
-
-.encomenda-form-artigo label {
-  font-family: var(--font-primary);
-}
-
-.encomenda-form-artigo input[type="text"] {
-  width: 100%;
-  border: 1px solid var(--primary-color);
-  padding: 5px;
-  margin-top: 0.5em;
-}
-
-.bordered-button {
-  border: 1px solid var(--color-white) !important;
-}
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-}
-
-.container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.individual-order {
-  background-color: #e9ecef;
-  border-radius: 5px;
-}
-
-h1 {
-  color: #333;
-}
-
-/* Fim Encomenda*/
