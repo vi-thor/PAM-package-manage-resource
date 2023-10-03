@@ -22,7 +22,6 @@ function addProductToList() {
         const li = document.createElement("li");
         li.textContent = `${selectedProduct.name} - € ${selectedProduct.price.toFixed(2)}`;
         document.getElementById("lista-produtos").appendChild(li);
-        li.classList.add("me-5")
         li.classList.add("m-2")
 
         updateTotal();

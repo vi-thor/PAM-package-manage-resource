@@ -3,6 +3,12 @@
 /**OVERRIDES*/
 
 
+header {
+  background-color: rgb(88, 158, 173);
+  color: #fff;
+  text-align: center;
+  height: 59px;
+}
 
 h1 {
   font-family: var(--font-primary);
