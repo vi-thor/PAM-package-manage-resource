@@ -31,9 +31,9 @@
 }
 
 .btn-outline-primary {
-  background-color: var(--color-white) !important;
+  color:var(--color-white) !important;
   border-color: var(--color-white) !important;
-  width: 80%;
+  width: 80% !important;
   border-radius: 20px !important;
 }
 

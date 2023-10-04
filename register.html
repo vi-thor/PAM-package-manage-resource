@@ -29,6 +29,8 @@
         <div class="input-group mb-3 d-flex flex-column pt-5">
           <span class="text-white">Nome</span>
           <input
+            required
+            id="nome"
             type="text"
             class="form-input"
             placeholder="John"
@@ -37,7 +39,9 @@
           />
           <span class="text-white mt-3">Email</span>
           <input
-            type="text"
+            required
+            id="email"
+            type="email"
             class="form-input"
             placeholder="ex: johndoe@domain.com"
             aria-label="Username"
@@ -48,13 +52,15 @@
         <div class="input-group pt-3 d-flex flex-column">
           <span class="text-white">Senha</span>
           <input
+            required
+            id="senha"
             type="password"
             aria-label="Username"
             aria-describedby="basic-addon1"
           />
         </div>
         <div class="input-group mb-3 d-flex flex-column mt-3 align-content-center">
-        <button type="submit" class="btn btn-outline-primary">Registar</button>
+        <button onclick="onRegister()" type="submit" class="btn btn-outline-primary">Registar</button>
       </div> 
     </div>
     <div class="d-flex row pt-3">
@@ -62,7 +68,17 @@
     </div>
    
     </main>
+    <script>
 
+      function onRegister(){
+        const nome = document.querySelector("#nome").value
+        const email = document.querySelector("#email").value
+        const senha = document.querySelector("#senha").value
+        
+        localStorage.setItem("user", {"nome": nome, "senha": senha, "email": email})
+        window.location.href = "./encomenda.html"
+      }
+  </script>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>

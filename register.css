@@ -1,8 +1,10 @@
+@import url('./variables.css');
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,200&display=swap");
 
 /*Roboto imports*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url();
+
 
 @font-face {
   font-family: "Roboto-bold";
